@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/brower_dialog_bg" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="删除提示框"
+        android:textColor="?attr/brower_dialog_label_color"
+        android:textSize="?attr/brower_dialog_label_text_size" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_title"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="确定要删除该条数据"
+        android:textColor="?attr/brower_dialog_content_color"
+        android:textSize="?attr/brower_dialog_content_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/ll_sure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_hint"
+        android:layout_marginTop="16dp"
+        android:gravity="right|center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/tv_commit"
+            android:background="?attr/brower_dialog_btn_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="24dp"
+            android:textSize="?attr/brower_dialog_btn_text_size"
+            android:textColor="?attr/brower_dialog_btn_color" />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/brower_dialog_btn_bg"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="16dp"
+            android:text="确定"
+            android:textSize="?attr/brower_dialog_btn_text_size"
+            android:textColor="?attr/brower_dialog_btn_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

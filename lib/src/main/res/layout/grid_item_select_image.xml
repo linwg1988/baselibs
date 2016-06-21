@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/id_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/default_logo_img"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/id_item_select"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@null"
+        android:clickable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/lib_icon_unselected" />
+
+</RelativeLayout>

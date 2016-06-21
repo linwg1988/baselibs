@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lib</string>
+    <string name="transition_image">image</string>
+    <string name="crop_save_text" >"保存"</string>
+    <string name="crop_discard_text" >"舍弃"</string>
+
+    <string name="wallpaper" >"正在设置壁纸..."</string>
+    <string name="savingImage" >"正在保存照片..."</string>
+    <string name="multiface_crop_help">"触摸一张脸开始裁剪。"</string>
+    <string name="runningFaceDetection">"请稍候..."</string>
+    <string name="Worm">Worm</string>
+    <string name="SureToRemovePic">确定要移除该图片？</string>
+    <string name="Confirm">确定</string>
+    <string name="Done"> 完成</string>
+    <string name="NoPicChoice">还没有选择图片</string>
+    <string name="ForderNotExist">文件夹已不存在</string>
+    <string name="piece">张</string>
+    <string name="no_extra_storage">没有外部存储</string>
+    <string name="most_choice">最多选择</string>
+    <string name="piece_pic">张图片</string>
+    <string name="connect_server_error">连接服务器失败</string>
+    <string name="network_error_try_again">网络异常,请稍后再试</string>
+    <string name="network_problem">外星人攻击，网络不给力</string>
+    <string name="save_fail_please_retry">保存失败,请重试</string>
+    <string name="save_success_pic_is_locate">保存成功,图片保存在</string>
+    <string name="catalog">目录</string>
+</resources>

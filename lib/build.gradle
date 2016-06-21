@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions{
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/eventbus-3.0.0-beta1.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/glide-okhttp3-integration-1.4.0.jar')
+    compile files('libs/glide-volley-integration-1.4.0.jar')
+    compile files('libs/okhttp-2.5.0.jar')
+    compile files('libs/okhttp-urlconnection-2.5.0.jar')
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.1'
+    compile files('libs/gson-2.6.2.jar')
+}
+
+publish {
+    userOrg = 'linwg1988'//bintray.com用户名
+    groupId = 'org.linwg1988'//jcenter上的路径
+    artifactId = 'baselibs'//项目名称
+    publishVersion = '1.0.1'//版本号
+    desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
+    website = 'https://github.com/linwg1988/baselibs'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+}
